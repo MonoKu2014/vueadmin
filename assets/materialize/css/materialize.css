@@ -3355,7 +3355,7 @@ nav ul a span.badge {
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 70%;
+    width: 68%;
   }
 }
 
@@ -4813,7 +4813,7 @@ small {
 }
 
 .card .card-content {
-  padding: 24px;
+  padding: 10px;
   border-radius: 0 0 2px 2px;
 }
 
@@ -4836,7 +4836,7 @@ small {
   position: relative;
   background-color: inherit;
   border-top: 1px solid rgba(160, 160, 160, 0.2);
-  padding: 16px 24px;
+  padding: 10px;
 }
 
 .card .card-action:last-child {
@@ -5735,7 +5735,8 @@ button.btn-floating {
 
 .side-nav .collapsible-body li a,
 .side-nav.fixed .collapsible-body li a {
-  padding: 0 23.5px 0 31px;
+  padding: 0 23.5px 0 40px;
+  font-size: 12px;
 }
 
 .collapsible.popout {
@@ -7174,7 +7175,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: 500;
   height: 48px;
   line-height: 48px;
-  padding: 0 32px;
+  padding: 0 16px;
 }
 
 .side-nav li > a:hover {

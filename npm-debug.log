@@ -1,0 +1,80 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'vue-tables-2' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData vue-tables-2
+8 silly fetchNamedPackageData vue-tables-2
+9 silly mapToRegistry name vue-tables-2
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'vue-tables-2',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'vue-tables-2',
+12 silly mapToRegistry   name: 'vue-tables-2',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/vue-tables-2
+14 verbose request uri https://registry.npmjs.org/vue-tables-2
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 15:55:47
+17 verbose request id cc975accf95775bc
+18 http request GET https://registry.npmjs.org/vue-tables-2
+19 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 151.101.56.162:443
+20 info attempt registry request try #2 at 15:55:58
+21 http request GET https://registry.npmjs.org/vue-tables-2
+22 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 151.101.56.162:443
+23 info attempt registry request try #3 at 15:56:59
+24 http request GET https://registry.npmjs.org/vue-tables-2
+25 silly fetchPackageMetaData Error: connect ECONNREFUSED 151.101.56.162:443
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1018:11)
+25 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1041:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+25 silly fetchPackageMetaData  error for vue-tables-2 { Error: connect ECONNREFUSED 151.101.56.162:443
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1018:11)
+25 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1041:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+25 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+25 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+25 silly fetchPackageMetaData   syscall: 'connect',
+25 silly fetchPackageMetaData   address: '151.101.56.162',
+25 silly fetchPackageMetaData   port: 443 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: connect ECONNREFUSED 151.101.56.162:443
+30 verbose stack     at Object.exports._errnoException (util.js:1018:11)
+30 verbose stack     at exports._exceptionWithHostPort (util.js:1041:20)
+30 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+31 verbose cwd C:\xampp\htdocs\vuetest
+32 error Windows_NT 6.1.7601
+33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "vue-tables-2"
+34 error node v6.11.0
+35 error npm  v3.10.10
+36 error code ECONNREFUSED
+37 error errno ECONNREFUSED
+38 error syscall connect
+39 error Error: connect ECONNREFUSED 151.101.56.162:443
+39 error     at Object.exports._errnoException (util.js:1018:11)
+39 error     at exports._exceptionWithHostPort (util.js:1041:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+39 error  { Error: connect ECONNREFUSED 151.101.56.162:443
+39 error     at Object.exports._errnoException (util.js:1018:11)
+39 error     at exports._exceptionWithHostPort (util.js:1041:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+39 error   code: 'ECONNREFUSED',
+39 error   errno: 'ECONNREFUSED',
+39 error   syscall: 'connect',
+39 error   address: '151.101.56.162',
+39 error   port: 443 }
+40 error If you are behind a proxy, please make sure that the
+40 error 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
