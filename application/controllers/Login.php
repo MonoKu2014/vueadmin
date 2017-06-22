@@ -44,4 +44,18 @@ class Login extends CI_Controller {
 
 	}
 
+
+	public function close_session()
+	{
+        $array_items = array(
+            'id'      		=> '',
+            'name'  		=> '',
+            'email'   		=> ''
+        );
+
+		$this->session->unset_userdata($array_items);
+		$this->session->sess_destroy();
+		redirect(base_url());
+	}
+
 }

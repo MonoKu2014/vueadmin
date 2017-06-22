@@ -4,7 +4,7 @@
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="#!">Profile</a></li>
   <li><a href="#!">Settings</a></li>
-  <li><a href="#!">Logout</a></li>
+  <li><a href="<?= base_url();?>login/close_session">Logout</a></li>
 </ul>
 <nav class="teal darken-1">
   <div class="nav-wrapper">
