@@ -18,3 +18,13 @@
 .not-scroll {
     overflow: hidden;
 }
+
+.btn-small {
+	padding: 0 4px;
+	height: 26px;
+	line-height: 0;
+}
+
+.btn-small i {
+	font-size: 16px;
+}

@@ -11,3 +11,11 @@ function validate_session()
         redirect(base_url());
     }
 }
+
+
+//print_r and die, for depurate php code
+function dd($var)
+{
+	print_r('<pre>' . $var . '</pre>');
+	die();
+}

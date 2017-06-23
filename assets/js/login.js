@@ -1,4 +1,4 @@
-var auth_login = new Vue({
+var vm = new Vue({
 
 	el: '#login',
 	data: {
@@ -13,18 +13,18 @@ var auth_login = new Vue({
 
 		doLogin: function(){
 
-			this.login_success = true;
-			this.button_text = 'Logging In ...';
-
 			if(this.user_email == '' || this.user_password == ''){
 
 				this.message = 'Please, enter the user and password';
 				
 				setTimeout(function(){ 
-					auth_login.resetData();
+					vm.resetData();
 				}, 2000);
 
 			} else {
+
+				this.login_success = true;
+				this.button_text = 'Logging In ...';
 
 				$.ajax({
 
@@ -37,8 +37,8 @@ var auth_login = new Vue({
 							window.location = response.url;
 						} else {
 							setTimeout(function(){ 
-								auth_login.resetData();
-								alert(response.message);
+								vm.resetData();
+								this.message = 'User or password are invalid';
 							}, 2000);
 						}
 					}

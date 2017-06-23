@@ -20,7 +20,9 @@
           <form class="col s12" method="post">
             <div class="row">
               <div class="col s12">
+                <transition name="fade">
               	<p v-if="message">{{ message }}</p>
+                </transition>
               </div>
             </div>
 
@@ -48,10 +50,12 @@
                   {{ button_text }}
                 </button>
               </div>
+              <transition name="fade">
               <div class="row" v-if="login_success">
                 <div class="progress">
                     <div class="indeterminate"></div>
                 </div>
+              </transition>
               </div>
             </center>
           </form>

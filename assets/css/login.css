@@ -21,3 +21,10 @@ main {
   border-bottom: 2px solid #e91e63;
   box-shadow: none;
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}
